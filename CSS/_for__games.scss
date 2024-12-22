@@ -1,11 +1,11 @@
 .for__games{
-    background-color: rgb(32, 32, 39) ;
     box-sizing: border-box;
     background: url(../IMG/for__games/for__gamesBG.png);
     background-repeat: no-repeat;
     background-color: rgb(32, 32, 39) ;
     background-position: center;
     background-size: cover;
+    padding-bottom: 50px;
     
     
  
@@ -36,7 +36,6 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 32px;
-    padding-top: 132px;
 }
 &-wrapper{
     display: flex;
@@ -65,12 +64,20 @@
             line-height: 110%;
             letter-spacing: 0px;
             text-align: left;
+            border-radius: 52.58px;
+            background: rgb(247, 247, 247);
+            width: 108px;
+            height: 36px;
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top:8px ;
+            padding-bottom: 10px;
         }
         &-game-name{
             color: rgb(32, 32, 39);
             font-size: 32px;
-            font-weight: 500;
-            line-height: 110%;
+            font-weight: 700;
+            line-height: 39px;
             letter-spacing: 0px;
             text-align: left;
         }
