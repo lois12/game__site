@@ -68,13 +68,34 @@ a{
         background:rgb(255, 255, 255);
         cursor: pointer;
     }
-    
+}
+.top__line{
+    background-color: rgb(188, 236, 48)
+}
+.line__content{
+    display: flex;
+    align-items: center;
+    gap: 51px;
 }
 .separator{
-    width: 1440px;
     background: rgb(32, 32, 39);
+
     
     
+}
+.footer{
+    background: rgb(189, 237, 53);
+    background-size: contain;
+    &__content{
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-top: 61px;
+        padding-bottom: 60px;
+    }
 }
 @import 'for__games';
 @import 'mini__games';
