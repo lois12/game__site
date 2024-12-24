@@ -1,35 +1,39 @@
 html {
     scroll-behavior: smooth;
-  }
-  
-a{
+}
+
+a {
     text-decoration: none;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'montserrat', sans-serif;
 }
-.center{
+
+.center {
     padding-left: calc(50% - 600px);
     padding-right: calc(50% - 600px);
 }
 
-.top{
+.top {
     background-image: url(../IMG/top__img.jpeg);
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 800px;
-    &__content{
+
+    &__content {
         display: flex;
-        flex-direction:column;
+        flex-direction: column;
         row-gap: 24px;
         justify-content: start;
         align-items: start;
     }
-    &__title{
+
+    &__title {
         color: rgb(32, 32, 39);
         font-size: 64px;
         font-weight: 700;
@@ -38,9 +42,10 @@ a{
         text-align: left;
         max-width: 769px;
         padding-top: 169px;
-        
+
     }
-    &__subtitle{
+
+    &__subtitle {
         color: rgb(32, 32, 39);
         font-size: 24px;
         font-weight: 400;
@@ -50,7 +55,8 @@ a{
         max-width: 769px;
 
     }
-    &__btn{
+
+    &__btn {
         width: 247px;
         height: 66px;
         border-radius: 60px;
@@ -62,31 +68,37 @@ a{
         letter-spacing: 0%;
         text-align: center;
     }
-    &__btn:hover{
+
+    &__btn:hover {
         color: rgb(0, 0, 0);
         border: 1px solid rgb(0, 0, 0);
-        background:rgb(255, 255, 255);
+        background: rgb(255, 255, 255);
         cursor: pointer;
     }
 }
-.top__line{
+
+.top__line {
     background-color: rgb(188, 236, 48)
 }
-.line__content{
+
+.line__content {
     display: flex;
     align-items: center;
     gap: 51px;
 }
-.separator{
+
+.separator {
     background: rgb(32, 32, 39);
 
-    
-    
+
+
 }
-.footer{
+
+.footer {
     background: rgb(189, 237, 53);
     background-size: contain;
-    &__content{
+
+    &__content {
         color: rgb(0, 0, 0);
         font-size: 24px;
         font-weight: 600;
@@ -97,5 +109,6 @@ a{
         padding-bottom: 60px;
     }
 }
+
 @import 'for__games';
 @import 'mini__games';
