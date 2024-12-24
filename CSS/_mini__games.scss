@@ -1,0 +1,83 @@
+.mini-games{
+    background: url(../IMG/mini-gamesBG.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    background-repeat: no-repeat;
+    &__box{
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+        padding-bottom:144px;
+    }
+    &__title{
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 700;
+        line-height: 78px;
+        letter-spacing: 0px;
+        text-align: left;
+        padding-bottom: 72px;
+        padding-top: 14px;
+    }
+   &__card{
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+    box-shadow: 0px 20px 67px -12px rgba(0, 0, 0, 0.13);
+    background: rgb(255, 255, 255);
+    &_reverse{
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+   }
+}
+  
+  .card{
+    &__title{
+        color: rgb(32, 32, 39);
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 59px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__info{
+        color: rgb(32, 32, 39);
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        row-gap:24px ;
+        padding: 48px;
+        text-align: left;
+    }
+    &__form{
+        padding-top: 12px;
+        &__btn{
+        width: 247px;
+        height: 66px;
+        border-radius: 60px;
+        background: rgb(32, 32, 39);
+        color: rgb(255, 255, 255);
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+        text-align: center;
+        }
+        &__btn:hover{
+            color: rgb(0, 0, 0);
+            border: 1px solid rgb(0, 0, 0);
+            background:rgb(255, 255, 255);
+            cursor: pointer;
+        } 
+    }
+   }

@@ -1,66 +1,191 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'montserrat', sans-serif;
-}
-.center{
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-}
+<!DOCTYPE html>
+<html lang="en">
 
-.top{
-    background-image: url(../IMG/top__img.jpeg);
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 800px;
-    &__content{
-        display: flex;
-        flex-direction:column;
-        row-gap: 24px;
-        justify-content: start;
-        align-items: start;
-    }
-    &__title{
-        color: rgb(32, 32, 39);
-        font-size: 64px;
-        font-weight: 700;
-        line-height: 78px;
-        letter-spacing: 0px;
-        text-align: left;
-        max-width: 769px;
-        padding-top: 169px;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Game__site</title>
+</head>
+
+<body>
+<div class="top center">
+    <div class="top__content">
+        <h1 class="top__title">Добро пожаловать на мой сайт мини-игр</h1>
+        <p class="top__subtitle">Тебе предстоит пройти несколько увлекательных игр. <br> Если готов, нажимай «Поехали!» и приступай.</p>
+        <form action="#for__games-section">
+        <button  class="top__btn">Поехали!</button>
+        </form>
+</div>
+</div>
+<main>
+    <section id="for__games-section" class="for__games center">
+       <h2 class="for__games-title">Об играх</h2>
+       <p class="for__games-info">В моей коллекции представлено 6 игр на разные темы<br>Игры несложные — в них может поиграть каждый.
+        <br>Все игры доступны для пользования.</p>  
+
+<div class="for__games-wrapper">
+
+       
+<div class="for__games-box">
         
-    }
-    &__subtitle{
-        color: rgb(32, 32, 39);
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 32px;
-        letter-spacing: 0px;
-        text-align: left;
-        max-width: 769px;
+<article class="for__games-card">
+<a href="#">
+        <img class="for__games-card__img" src="IMG/for__games/card__1.jpeg" alt="game__1">
+        <div class="for__games-card__content">
+        <h4 class="for__games-card__content-title">Игра №1</h4>
+        <p class="for__games-card__content-game-name">Угадай число</p>
+        </div>
+</a>
+</article>
 
-    }
-    &__btn{
-        width: 247px;
-        height: 66px;
-        border-radius: 60px;
-        background: rgb(32, 32, 39);
-        color: rgb(255, 255, 255);
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 141.69%;
-        letter-spacing: 0%;
-        text-align: center;
-    }
-    &__btn:hover{
-        color: rgb(0, 0, 0);
-        border: 1px solid rgb(0, 0, 0);
-        background:rgb(255, 255, 255);
-        cursor: pointer;
-    }
+
+
+<article class="for__games-card">
+<a href="#">
+        <img class="for__games-card__img" src="IMG/for__games/card__4.png" alt="game__1">
+        <div class="for__games-card__content">
+        <h4 class="for__games-card__content-title">Игра №4</h4>
+        <p class="for__games-card__content-game-name">Камень, ножницы,<br>бумага</p>
+        </div>
+</a>
+</article>
+</div> 
+
+
+        <div class="for__games-box">
+<article class="for__games-card">
+<a href="#">
+        <img class="for__games-card__img" src="IMG/for__games/card__2.png" alt="game__1">
+        <div class="for__games-card__content">
+        <h4 class="for__games-card__content-title">Игра №2</h4>
+        <p class="for__games-card__content-game-name">Простая арифметика</p>
+        </div>
+</a>
+</article>
+
+
+
+<article class="for__games-card ">
+<a href="#">
+            <img class="for__games-card__img" src="IMG/for__games/card__5.png" alt="game__1">
+            <div class="for__games-card__content">
+            <h4 class="for__games-card__content-title">Игра №5</h4>
+            <p class="for__games-card__content-game-name">Простая викторина</p>
+            </div>
+</a>
+</article>
+            
+
+        </div>
+        <div class="for__games-box">
+<article class="for__games-card">
+<a href="#">
+        <img class="for__games-card__img" src="IMG/for__games/card__3.png" alt="game__1">
+        <div class="for__games-card__content">
+        <h4 class="for__games-card__content-title">Игра №3</h4>
+        <p class="for__games-card__content-game-name">Переверни текст</p>
+        </div>
+</a>
+</article>
+
+
+
+
+<article class="for__games-card">
+<a href="#">
+        <img class="for__games-card__img" src="IMG/for__games/card__6.png" alt="game__1">
+        <div class="for__games-card__content">
+        <h4 class="for__games-card__content-title">Игра №6</h4>
+        <p class="for__games-card__content-game-name">Генератор случайных <br>цветов</p>
+        </div>
+</a>
+</article>
+            
+
+        </div>
+    </section>
+
+
     
-}
-@import 'for__games';
+
+    <section class="mini-games center">
+        <hr class="separator center"></hr>
+        <h2 class="mini-games__title">Мини-игры</h2>
+        <div class="mini-games__box">
+<article class="mini-games__card">
+    <div class="card__content">
+        <h3 class="card__title">Угадай число</h3>
+        <p class="card__info">Попробуй угадать случайное  <br>число от 1 до 100.</p>
+    <form class="card__form" action="#">
+        <button class="card__form__btn">Играть</button>
+    </form>
+    </div>
+    <img src="IMG/mini-game/card1.png" alt="#">
+</article>
+<article class="mini-games__card mini-games__card_reverse">
+    <div class="card__content">
+        <h3 class="card__title">Простая арифметика</h3>
+        <p class="card__info">Попробуй решить простые арифметические задачи.</p>
+    <form class="card__form" action="#">
+        <button class="card__form__btn">Играть</button>
+    </form>
+    </div>
+    <img src="IMG/mini-game/Card2.png" alt="#">
+</article>
+<article class="mini-games__card">
+    <div class="card__content">
+        <h3 class="card__title">Угадай число</h3>
+        <p class="card__info">Попробуй угадать случайное  <br>число от 1 до 100.</p>
+    <form class="card__form" action="#">
+        <button class="card__form__btn">Играть</button>
+    </form>
+    </div>
+    <img src="IMG/mini-game/card1.png" alt="#">
+</article>
+<article class="mini-games__card mini-games__card_reverse">
+    <div class="card__content">
+        <h3 class="card__title">Простая арифметика</h3>
+        <p class="card__info">Попробуй решить простые арифметические задачи.</p>
+    <form class="card__form" action="#">
+        <button class="card__form__btn">Играть</button>
+    </form>
+    </div>
+    <img src="IMG/mini-game/Card2.png" alt="#">
+</article>
+<article class="mini-games__card">
+    <div class="card__content">
+        <h3 class="card__title">Угадай число</h3>
+        <p class="card__info">Попробуй угадать случайное  <br>число от 1 до 100.</p>
+    <form class="card__form" action="#">
+        <button class="card__form__btn">Играть</button>
+    </form>
+    </div>
+    <img src="IMG/mini-game/card1.png" alt="#">
+</article>
+<article class="mini-games__card mini-games__card_reverse">
+    <div class="card__content">
+        <h3 class="card__title">Простая арифметика</h3>
+        <p class="card__info">Попробуй решить простые арифметические задачи.</p>
+    <form class="card__form" action="#">
+        <button class="card__form__btn">Играть</button>
+    </form>
+    </div>
+    <img src="IMG/mini-game/Card2.png" alt="#">
+</article>
+
+
+        </div>
+
+    </section>
+</main>
+<footer class="footer center">
+    <aside class="footer__content">Все права защищены</aside>
+</footer>
+<script src="myscripts.js" async></script>
+</body>
+
+</html>
