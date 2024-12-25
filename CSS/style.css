@@ -417,6 +417,8 @@ a {
     font-size: 40px;
     line-height: 49px;
     align-items: start;
+    padding-top: 48px;
+    padding-bottom: 48px;
   }
   .mini-games__card {
     max-width: 343px;
@@ -465,5 +467,8 @@ a {
     font-size: 16px;
     font-weight: 600;
     line-height: 20px;
+  }
+  .separator {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
