@@ -377,6 +377,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 24;
+    padding-bottom: 32px;
   }
   .top__title {
     font-size: 40px;
