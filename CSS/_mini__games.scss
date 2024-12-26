@@ -1,6 +1,7 @@
 .mini-games{
     background: url(../IMG/mini-gamesBG.png);
     background-size: cover;
+    background-position: right;
     display: flex;
     flex-direction: column;
     row-gap: 32px;
@@ -32,10 +33,6 @@
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
-   }
-}
-  
-  .card{
     &__title{
         color: rgb(32, 32, 39);
         font-size: 48px;
@@ -72,6 +69,7 @@
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
+        transition: 2s;
         }
         &__btn:hover{
             color: rgb(0, 0, 0);
@@ -79,5 +77,8 @@
             background:rgb(255, 255, 255);
             cursor: pointer;
         } 
-    }
+   }
+}
+
+  
    }
