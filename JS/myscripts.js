@@ -48,4 +48,4 @@ const user = {
 
 
 let userName = prompt("Ваше имя сэр- господин??")
-alert( "Имя пользователя:+userName");
+alert( "Имя пользователя:"+userName);
