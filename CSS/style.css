@@ -423,14 +423,14 @@ a {
     padding-bottom: 48px;
   }
   .mini-games__card {
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-start;
     align-items: flex-start;
   }
   .mini-games__card__img {
-    max-width: 343px;
+    width: 100%;
   }
   .mini-games__card__title {
     font-size: 32px;

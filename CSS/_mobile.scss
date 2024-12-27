@@ -58,7 +58,7 @@
         padding-bottom: 48px;
     }
     &__card{
-        max-width:100%;
+        width:100%;
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-start;
@@ -69,7 +69,7 @@
     }
 }
 .mini-games__card__img{
-    max-width: 343px;
+    width: 100%;
 
 }
 .mini-games__card__title{
