@@ -1,0 +1,128 @@
+@media (max-width:767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .top{
+       
+    &__content{
+    
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24;
+        padding-bottom: 32px;
+    }
+    &__title{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 49px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    &__subtitle{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+    &__btn{
+        width: 285px;
+        height: 55px;
+        font-size:16px;
+        font-weight: 600;
+        line-height: 141.69%;
+        letter-spacing: 0%;
+    }
+}
+.for__games{
+    display: none;
+}
+.mini-games{
+    background-color: rgb(32, 32, 39) ;
+    max-width: 767px;
+
+    &__box{
+        align-items: center;
+        row-gap: 24px;
+        padding-bottom: 48px;
+    }
+    &__title{
+        font-size: 40px;
+        line-height: 49px;
+        align-items: start;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    &__card{
+        width:100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    
+    
+    }
+}
+.mini-games__card__img{
+    width: 100%;
+
+}
+.mini-games__card__title{
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 700;
+}
+.mini-games__card__info{
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+}
+
+.mini-games__card__content{
+    row-gap: 16px;
+    padding: 16px 28px 16px 28px;
+}
+.mini-games__card__form__btn{
+    width: 100%;
+    height: 55px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 141.69%;
+    letter-spacing: 0%;
+    text-align: center;
+    
+    
+    
+
+}
+.mini-games__card__form__btn:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+    .top__btn:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    }
+  
+    
+.footer__content{
+    padding-top: 40px;
+    padding-bottom:40px ;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.separator{
+    display: none;
+}
+
+    
+    
+}
+

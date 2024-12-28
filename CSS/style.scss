@@ -22,7 +22,7 @@ a {
 .top {
     background-image: url(../IMG/top__img.jpeg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right;
     background-size: cover;
     height: 800px;
 
@@ -68,6 +68,7 @@ a {
         line-height: 141.69%;
         letter-spacing: 0%;
         text-align: center;
+        transition: 2s;
     }
 
     &__btn:hover {
@@ -113,3 +114,4 @@ a {
 
 @import 'for__games';
 @import 'mini__games';
+@import 'mobile';
