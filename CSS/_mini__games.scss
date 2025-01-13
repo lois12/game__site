@@ -6,13 +6,13 @@
     flex-direction: column;
     row-gap: 32px;
     background-repeat: no-repeat;
-    &__box{
+    &-box{
         display: flex;
         flex-direction: column;
         row-gap: 32px;
         padding-bottom:144px;
     }
-    &__title{
+    &-title{
         color: rgb(255, 255, 255);
         font-size: 64px;
         font-weight: 700;
@@ -33,15 +33,23 @@
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
-    &__title{
+    &-title{
+        max-width: 601px;
+        overflow-wrap:normal;
         color: rgb(32, 32, 39);
         font-size: 48px;
         font-weight: 700;
         line-height: 59px;
         letter-spacing: 0px;
         text-align: left;
+       
+
+        &_small{
+            width: 280px;
+            word-wrap: break-word;
+        }
     }
-    &__info{
+    &-info{
         color: rgb(32, 32, 39);
         font-size: 24px;
         font-weight: 400;
@@ -49,17 +57,18 @@
         letter-spacing: 0px;
         text-align: left;
     }
-    &__content{
+    &-content{
+        
         display: flex;
         flex-direction: column;
         row-gap:24px ;
         padding: 48px;
         text-align: left;
     }
-    &__form{
+    &-form{
         padding-top: 12px;
-        &__btn{
-        width: 247px;
+        &-btn{
+        width: 100%;
         height: 66px;
         border-radius: 60px;
         background: rgb(32, 32, 39);
@@ -71,7 +80,7 @@
         text-align: center;
         transition: 2s;
         }
-        &__btn:hover{
+        &-btn:hover{
             color: rgb(0, 0, 0);
             border: 1px solid rgb(0, 0, 0);
             background:rgb(255, 255, 255);
