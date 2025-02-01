@@ -5,7 +5,12 @@
 		},
 		{
 			"path": "../../../site shop1"
+		},
+		{
+			"path": "C:/Users/Бубалех/Downloads/site_duble"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "game__site"
+	}
 }
