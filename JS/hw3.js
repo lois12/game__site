@@ -40,7 +40,8 @@ n % 2 == 0
 .
  */
 
-let hiddenNumber = Math.floor(Math.random() * 10000);  // promt // ----->>>
+//let hiddenNumber = Math.floor(Math.random() * 10000);  // promt // ----->>>
+let hiddenNumber = prompt(`Введите любое число`)
 console.log(`Загаданное число ${hiddenNumber}`)
 hiddenguess(hiddenNumber);
 
@@ -48,10 +49,12 @@ function hiddenguess(hiddenNumber) {
 
 
     if (hiddenNumber % 2 == 0) {
-        console.log(`Число чётное`); //return
+        console.log(`Число чётное`);
+        return 
     }
     else {
         console.log(`Число нечётное`);
+        return
 
     }
 
@@ -63,7 +66,7 @@ function hiddenguess(hiddenNumber) {
 Напишите функцию, которая принимает параметром число и возвращает квадрат этого числа значением — так, чтобы потом это значение можно было использовать.
 
  */
-let a = Math.floor(Math.random() * 10000); //promt
+let a = prompt(`Введите любое число`)
 let b = 2;
 double(a, b);
 function double(a, b) {
