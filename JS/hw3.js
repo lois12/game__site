@@ -40,10 +40,9 @@ n % 2 == 0
 .
  */
 
-//let hiddenNumber = Math.floor(Math.random() * 10000);  // promt // ----->>>
-let hiddenNumber = prompt(`Введите любое число`)
+
 console.log(`Загаданное число ${hiddenNumber}`)
-hiddenguess(hiddenNumber);
+hiddenguess(hiddenNumber = 1);
 
 function hiddenguess(hiddenNumber) {
 
@@ -66,9 +65,9 @@ function hiddenguess(hiddenNumber) {
 Напишите функцию, которая принимает параметром число и возвращает квадрат этого числа значением — так, чтобы потом это значение можно было использовать.
 
  */
-let a = prompt(`Введите любое число`)
+
 let b = 2;
-double(a, b);
+double(4, b);
 function double(a, b) {
 
     let mult = a ** b;
@@ -130,7 +129,7 @@ isNaN()
 .
 Если оба параметра — числа, то возвращает произведение данных чисел. */
 
-let CorrectNumber = (a = Number( prompt (`Введите первое значение`)), b = Number( prompt (`Введите второе значение`))) => {  //  из строки в число +-
+let сorrectNumber = (a = Number( prompt (`Введите первое значение`)), b = Number( prompt (`Введите второе значение`))) => {  //  из строки в число +-
     if (isNaN(a) || isNaN(b)) {
         console.log(`Одно или оба значения не являются числом`);
 
@@ -143,19 +142,10 @@ let CorrectNumber = (a = Number( prompt (`Введите первое значе
     }
 
 }
-CorrectNumber();
+сorrectNumber();
 
-/* let aa= test()
-console.log ( Number(aa));
-const test = () =>
-{   
 
-    return `5`
-    
-}
 
-let aa= test()
-console.log ( Number(test())); */
 /* Задание 6
 Напишите функцию, которая выполняет следующий алгоритм:
 Запрашивает у пользователя число.
@@ -221,3 +211,20 @@ console.log(circle1.merhgetPerimetr());
 console.log(circle1.methgetArea());
 console.log(circle2.merhgetPerimetr());
 console.log(circle2.methgetArea());
+
+
+
+
+
+// ЭТО ТЕСТОВОЕ ЗАДАНИЕ ДЕЛАЛ НА КОНСУЛЬТАЦИИ С НАСТВАВНИКОМ
+/* let aa= test()
+console.log ( Number(aa));
+const test = () =>
+{   
+
+    return `5`
+    
+}
+
+let aa= test()
+console.log ( Number(test())); */
