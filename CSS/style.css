@@ -396,7 +396,7 @@ a {
     padding-right: 16px;
   }
   .top {
-    background: url(../IMG/mobile/Star\ 4.svg) top 580px left 304px/39px 41px no-repeat, url(../IMG/mobile/Star\ 5.svg) top 557px left 273px/18px no-repeat, url(../IMG/mobile/Star\ 2.svg) top 97px left 38px/35px no-repeat, url(../IMG/mobile/Star\ 3.svg) top 64px left 92px/21px no-repeat, url(../IMG/mobile/big\ star.svg) top -40px left 489px/223px 238px no-repeat, url(../IMG/mobile/mob__test.png) right/100% no-repeat;
+    background: url(../IMG/mobile/Star\ 4.svg) top 580px left 304px/39px 41px no-repeat, url(../IMG/mobile/Star\ 5.svg) top 557px left 273px/18px no-repeat, url(../IMG/mobile/Star\ 2.svg) top 97px left 38px/35px no-repeat, url(../IMG/mobile/Star\ 3.svg) top 64px left 92px/21px no-repeat, url(../IMG/mobile/big\ star.svg) top -100px right -110px/223px 238px no-repeat, url(../IMG/mobile/mob__test.png) right/100% no-repeat;
     height: 700px;
   }
   .top__content {
