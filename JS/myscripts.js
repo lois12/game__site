@@ -25,132 +25,46 @@ while (!guessed) {
 } 
 }
 
+// Игра простая арифметика
 
+function gameArifmetix() {
+    function generateTask() {
+        const operations = [
+            { operator: '+', func: (a, b) => a + b },
+            { operator: '-', func: (a, b) => a - b },
+            { operator: '*', func: (a, b) => a * b },
+            { operator: '/', func: (a, b) => a / b }
+        ];
 
+        const randomOperator = operations[Math.floor(Math.random() * operations.length)];
 
+        const number1 = Math.floor(Math.random() * 10) + 1;
+        const number2 = Math.floor(Math.random() * 10) + 1;
 
+        let task;
+        let userCorrectAnswer;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Задания на воркшопе //
-
-
-
-
-/* Напишите функцию, которая выполняет следующий алгоритм:
-
-Запрашивает у пользователя число.
-Проверяет, является ли введенное значение числом.
-Если значение не является числом, возвращает строку
-'Переданный параметр не является числом'
-.
-Если значение является числом, возвращает строку
-'n в кубе равняется <получившееся значение>'
-, где
-n
- — введенное число, а
-<получившееся значение>
- — число, возведенное в куб.
-Проверьте работу функции с числами от
-0
- до
-10
-. */
-
-
-
-/*
-Задание 1
-Напишите функцию для получения уникальных
-элементов массива.
-
-Для этого cоздайте функцию , которая принимает массив и возвращает новый массив с уникальными элементами.
-Используйте методы массивов для фильтрации и исключите дубликаты.
-*/
-
-//uniqueElements([ 1,2 ,3 ,3 ,4 ,4 ,1,5 ]); // [1,2,3,4,5]
-// uniqueElements([ 'apple', 'orange', 'banana', 'apple']); //['apple', 'orange', 'banana']
-
-
-
-/* const uniqueElements = (arr) => {
-    let newarr =[];
-    arr.forEach((elem) => {
-        if (!newarr.includes(elem)) {
-            newarr.push(elem);
-
+        if (randomOperator.operator === '/') {
+            task = `${number1 * number2} ${randomOperator.operator} ${number2}`;
+            userCorrectAnswer = number1;
+        } else {
+            task = `${number1} ${randomOperator.operator} ${number2}`;
+            userCorrectAnswer = randomOperator.func(number1, number2);
         }
-    })
-    return newarr.sort();
+
+        return { task, userCorrectAnswer };
+    }
+
+    function checkUserAnswer() {
+        const { task, userCorrectAnswer } = generateTask();
+        const userAnswer = parseFloat(prompt(`Решите задачу: ${task}`));
+
+        if (userAnswer === userCorrectAnswer) {
+            alert(`Правильный ответ!`);
+        } else {
+            alert(`Неправильный ответ! Правильный ответ: ${userCorrectAnswer}`);
+        }
+    }
+
+    checkUserAnswer();
 }
-console.log(uniqueElements([ 'apple', 'orange', 'banana', 'apple']));
-
- */
-
-
-
-
-/*
-Задание 2
-Напишите функцию для объединения массивов и сортировки уникальных значений.
-
-Создайте функцию , которая принимает два массива, объединяет их, удаляет дубликаты и возвращает отсортированный массив уникальных значений.
-*/
-
-// mergeAndSort([3,4,5], [1,2,6]) // [1,2,3,4,5,6]
-// mergeAndSort(['c', 'a'], [ 'b', 'a', 'd']) // ['a', 'b', 'c', 'd']
-
-
-/*
-
-const mergeAndSort = (arr,arr2) => {
-    let comboArr = arr.concat(arr2)
-    let newarr =[];
-    comboArr.forEach((elem) => {
-    if (!newarr.includes(elem)) {
-        newarr.push(elem);
-
-            }
-    })
-
-    return newarr.sort();
-
-
-}
-console.log(mergeAndSort(['c', 'a'], [ 'b', 'a', 'd']));
-
-
- */
-
-/*
-
-Задание 3
-Напишите функцию для фильтрации чисел больше заданного значения.
-
-Создайте функцию, которая принимает массив чисел и число limit.
-Функция должна возвращать новый массив, содержащий только те числа, которые больше limit.
-*/
-
-// filterGreaterThan([1,2,3,4,10,25,125,105], 10) // [25,125,105]
-/* 
-
-const filterGreaterThan = (arr,num) => {
-    let newarr = arr.filter(number => number > num)
-    return newarr;
-}
-console.log(filterGreaterThan([1,2,3,4,10,25,125,105], 10));
- */
