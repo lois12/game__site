@@ -353,6 +353,7 @@ a {
   word-wrap: break-word;
 }
 .mini-games__card-info {
+  max-width: 457px;
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
@@ -388,6 +389,18 @@ a {
   border: 1px solid rgb(0, 0, 0);
   background: rgb(255, 255, 255);
   cursor: pointer;
+}
+
+.mini-games__card-info_mod496px {
+  max-width: 496px;
+}
+
+.mini-games__card-info_mod476px {
+  max-width: 476px;
+}
+
+.mini-games__card-info_mod382px {
+  max-width: 382px;
 }
 
 @media (max-width: 767px) {

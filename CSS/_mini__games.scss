@@ -50,6 +50,7 @@
         }
     }
     &-info{
+        max-width: 457px;
         color: rgb(32, 32, 39);
         font-size: 24px;
         font-weight: 400;
@@ -90,4 +91,14 @@
 }
 
   
+   }
+.mini-games__card-info_mod496px{
+max-width: 496px;
+   }
+
+.mini-games__card-info_mod476px{
+ max-width: 476px;
+}
+.mini-games__card-info_mod382px{
+    max-width: 382px;
    }
