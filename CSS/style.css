@@ -23,7 +23,7 @@ a {
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
-  height: 800px;
+  height: 710px;
 }
 .top__content {
   display: flex;
@@ -40,7 +40,7 @@ a {
   letter-spacing: 0px;
   text-align: left;
   max-width: 769px;
-  padding-top: 169px;
+  padding-top: 196px;
 }
 .top__subtitle {
   width: 700px;
@@ -51,6 +51,7 @@ a {
   letter-spacing: 0px;
   text-align: left;
   max-width: 769px;
+  padding-bottom: 48px;
 }
 .top__btn {
   width: 247px;
@@ -122,7 +123,7 @@ a {
   background-color: rgb(32, 32, 39);
   background-position: center;
   background-size: cover;
-  padding-bottom: 50px;
+  padding-bottom: 40px;
 }
 
 .for-games__title {
@@ -132,7 +133,7 @@ a {
   line-height: 78px;
   letter-spacing: 0px;
   text-align: left;
-  padding-top: 94px;
+  padding-top: 96px;
   padding-bottom: 24px;
 }
 
@@ -322,8 +323,8 @@ a {
   line-height: 78px;
   letter-spacing: 0px;
   text-align: left;
-  padding-bottom: 72px;
-  padding-top: 14px;
+  padding-bottom: 40px;
+  padding-top: 46px;
 }
 .mini-games__card {
   width: 1200px;
@@ -362,7 +363,7 @@ a {
 .mini-games__card-content {
   display: flex;
   flex-direction: column;
-  row-gap: 24px;
+  row-gap: 16px;
   padding: 48px;
   text-align: left;
 }
@@ -370,7 +371,7 @@ a {
   padding-top: 12px;
 }
 .mini-games__card-form-btn {
-  width: 100%;
+  max-width: 267px;
   height: 66px;
   border-radius: 60px;
   background: rgb(32, 32, 39);
