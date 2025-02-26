@@ -19,8 +19,8 @@
         line-height: 78px;
         letter-spacing: 0px;
         text-align: left;
-        padding-bottom: 72px;
-        padding-top: 14px;
+        padding-bottom: 40px;
+        padding-top: 46px;
     }
    &__card{
     width: 1200px;
@@ -50,12 +50,14 @@
         }
     }
     &-info{
+        max-width: 457px;
         color: rgb(32, 32, 39);
         font-size: 24px;
         font-weight: 400;
         line-height: 32px;
         letter-spacing: 0px;
         text-align: left;
+        padding-bottom: 12px;
     }
     &-content{
         
@@ -66,9 +68,9 @@
         text-align: left;
     }
     &-form{
-        padding-top: 12px;
         &-btn{
-        width: 100%;
+        
+        max-width: 267px;
         height: 66px;
         border-radius: 60px;
         background: rgb(32, 32, 39);
@@ -91,3 +93,16 @@
 
   
    }
+.mini-games__card-info_mod496px{
+max-width: 496px;
+   }
+
+.mini-games__card-info_mod476px{
+ max-width: 476px;
+}
+.mini-games__card-info_mod382px{
+    max-width: 382px;
+   }
+.mini-games-form-btn_12px{
+    padding-top: 12px;
+}

@@ -24,7 +24,7 @@ a {
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    height: 800px;
+    height: 710px;
 
     &__content {
         display: flex;
@@ -32,7 +32,7 @@ a {
         row-gap: 24px;
         justify-content: start;
         align-items: start;
-        padding-left: 120px;
+        
     }
 
     &__title {
@@ -42,8 +42,8 @@ a {
         line-height: 78px;
         letter-spacing: 0px;
         text-align: left;
-        max-width: 769px;
-        padding-top: 169px;
+        max-width: 768px;
+        padding-top: 196px;
 
     }
 
@@ -55,11 +55,13 @@ a {
         line-height: 32px;
         letter-spacing: 0px;
         text-align: left;
-        max-width: 769px;
+        max-width: 720px;
+        padding-bottom: 48px;
 
     }
 
     &__btn {
+
         width: 247px;
         height: 66px;
         border-radius: 60px;

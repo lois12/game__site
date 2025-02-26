@@ -3,6 +3,7 @@ html {
 }
 
 a {
+  list-style-type: none;
   text-decoration: none;
 }
 
@@ -19,17 +20,17 @@ a {
 }
 
 .container {
-  width: 800px;
-  height: 800px;
-  margin-top: 200px;
-  margin-left: 600px;
-  border-radius: 20px;
-  border: solid 2px black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: grey;
+  padding-bottom: 30px;
 }
 
 .contaner__content {
-  padding: 70px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
   gap: 40px;
 }
@@ -49,4 +50,90 @@ a {
   text-align: center;
   display: flex;
   flex-direction: row;
+}
+
+.container__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  background-color: grey;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container__reg-form {
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 400px;
+  height: 50px;
+  padding-left: 16px;
+}
+.container__reg-form:hover {
+  background-color: burlywood;
+}
+
+.container__reg-form::-moz-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.container__reg-form::placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  font-size: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.container__reg-btn {
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 400px;
+  height: 50px;
+  cursor: pointer;
+}
+.container__reg-btn:hover {
+  background-color: burlywood;
+}
+
+/*    Header */
+.header {
+  background-color: black;
+  height: 120px;
+  width: 100%;
+}
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 35px;
+}
+.header__menu-link {
+  text-align: center;
+  font-style: bold;
+  color: white;
+  list-style-type: none;
+  text-decoration-style: none;
+  border: 1px;
+  border-radius: 20px;
+  background: grey;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: 2s;
+}
+.header__menu-link:hover {
+  color: black;
+  background-color: burlywood;
+}
+
+.header__title {
+  padding-top: 10px;
+  color: white;
+  text-align: center;
 }/*# sourceMappingURL=testscript.css.map */
