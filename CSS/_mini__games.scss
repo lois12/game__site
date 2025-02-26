@@ -57,18 +57,19 @@
         line-height: 32px;
         letter-spacing: 0px;
         text-align: left;
+        padding-bottom: 12px;
     }
     &-content{
         
         display: flex;
         flex-direction: column;
-        row-gap:16px ;
+        row-gap:24px ;
         padding: 48px;
         text-align: left;
     }
     &-form{
-        padding-top: 12px;
         &-btn{
+        
         max-width: 267px;
         height: 66px;
         border-radius: 60px;
@@ -102,3 +103,6 @@ max-width: 496px;
 .mini-games__card-info_mod382px{
     max-width: 382px;
    }
+.mini-games-form-btn_12px{
+    padding-top: 12px;
+}
