@@ -68,3 +68,80 @@ function gameArifmetix() {
 
     checkUserAnswer();
 }
+/* Игра  "переверни слово" */
+function wordReverse() {
+    const userWord = prompt(`Введите слово что бы его перевернуть`)
+    if (userWord) {
+        const reverseWord = userWord .split(``).reverse().join(``);
+        alert (`Перевернутое слово ${reverseWord}`)
+    }
+    else{
+        alert (`Вы ввели неправильное значение`)
+    }
+        }
+
+/* Игра простая викторина */
+function gameQuiz() {
+    const quiz = [
+        {
+            question: "Какой цвет неба?",
+            options: ["1. Красный", "2. Синий", "3. Зеленый"],
+            correctAnswer: 2 // номер правильного ответа
+        },
+        {
+            question: "Сколько дней в неделе?",
+            options: ["1. Шесть", "2. Семь", "3. Восемь"],
+            correctAnswer: 2
+        },
+        {
+            question: "Сколько у человека пальцев на одной руке?",
+            options: ["1. Четыре", "2. Пять", "3. Шесть"],
+            correctAnswer: 2
+        }
+    ];
+
+    let point = 0;
+
+    for (let i = 0; i < quiz.length; i++) {
+        const q = quiz[i];
+        let questionText = q.question + "\n";
+
+        for (let a = 0; a < q.options.length; a++) {
+            questionText += q.options[a] + "\n";
+        }
+
+        const userAnswer = prompt(questionText + "Введите свой ответ: ");
+
+        if (parseInt(userAnswer) === q.correctAnswer) {
+            point++;
+            alert(`Правильный ответ! ${q.options[q.correctAnswer - 1]}`);
+        } else {
+            alert(`Неправильный ответ. Правильный ответ: ${q.options[q.correctAnswer - 1]}`);
+        }
+    }
+
+    alert(`Вы набрали ${point} очков из возможных ${quiz.length}`);
+}
+
+
+
+/* Игра Камень\Ножницы\Бумага */
+function gameStonePapperCut(){
+const choices =[`камень`,`ножницы`,`бумага`]
+const userChoice = prompt(`Выберете  один из вариантов Камень,Ножницы или Бумага`).toLocaleLowerCase();
+if (!choices.includes(userChoice)) {
+    alert(`Вы ввели недопутимое значение`)
+    return;
+    
+}
+const randomChoice = choices[Math.floor(Math.random()*choices.length)]
+let resultGame;
+if (userChoice===randomChoice) {
+    alert(`Ваш выбор:${userChoice}, Выбор ИИ:${randomChoice} - получилась ничья` )
+}
+else if(userChoice === `камень` && randomChoice ===`ножницы` || userChoice === `ножницы` && randomChoice === `бумага` || userChoice === `бумага` && randomChoice ===`камень`){
+alert(`Вы победили, возбмите с полки пирожок`)
+}
+else{
+    alert(`Вы проиграли, печалька`)
+}}
