@@ -112,7 +112,7 @@ function delayForSecond(cb) {
 
 // Функция sayHi выводит в консоль приветствие для указанного имени
 function sayHi (name) {
-    console.log('Привет, ${name}!');
+    console.log("Привет, ${name}!");
 }
 
 // Код выше менять нельзя

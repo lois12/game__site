@@ -1,28 +1,28 @@
 
 //Игра угадай число
 
-function game1(){
- let userName = prompt(`Введите своё имя`);
-let randomNumber = Math.floor(Math.random()*100)+1;
+function game1() {
+    let userName = prompt(`Введите своё имя`);
+    let randomNumber = Math.floor(Math.random() * 100) + 1;
 
-console.log(randomNumber);
-let guessed =false;
+    console.log(randomNumber);
+    let guessed = false;
 
 
-while (!guessed) {
-    let userNumber = prompt(`Введите  число от 1 до 100`);
-    
-    if (userNumber>randomNumber) {
-        alert(`Ваше число больше, попробуйте ещё раз`);        
-    }
-        else if(userNumber<randomNumber){
+    while (!guessed) {
+        let userNumber = prompt(`Введите  число от 1 до 100`);
+
+        if (userNumber > randomNumber) {
+            alert(`Ваше число больше, попробуйте ещё раз`);
+        }
+        else if (userNumber < randomNumber) {
             alert(`Ваше число меньше, попробуйте ещё раз`)
         }
         else {
             alert(`Вы угадали число `)
             guessed = true;
         }
-} 
+    }
 }
 
 // Игра простая арифметика
@@ -72,13 +72,13 @@ function gameArifmetix() {
 function wordReverse() {
     const userWord = prompt(`Введите слово что бы его перевернуть`)
     if (userWord) {
-        const reverseWord = userWord .split(``).reverse().join(``);
-        alert (`Перевернутое слово ${reverseWord}`)
+        const reverseWord = userWord.split(``).reverse().join(``);
+        alert(`Перевернутое слово ${reverseWord}`)
     }
-    else{
-        alert (`Вы ввели неправильное значение`)
+    else {
+        alert(`Вы ввели неправильное значение`)
     }
-        }
+}
 
 /* Игра простая викторина */
 function gameQuiz() {
@@ -126,22 +126,23 @@ function gameQuiz() {
 
 
 /* Игра Камень\Ножницы\Бумага */
-function gameStonePapperCut(){
-const choices =[`камень`,`ножницы`,`бумага`]
-const userChoice = prompt(`Выберете  один из вариантов Камень,Ножницы или Бумага`).toLocaleLowerCase();
-if (!choices.includes(userChoice)) {
-    alert(`Вы ввели недопутимое значение`)
-    return;
-    
+function gameStonePapperCut() {
+    const choices = [`камень`, `ножницы`, `бумага`]
+    const userChoice = prompt(`Выберете  один из вариантов Камень,Ножницы или Бумага`).toLocaleLowerCase();
+    if (!choices.includes(userChoice)) {
+        alert(`Вы ввели недопуcтимое значение`)
+        return;
+
+    }
+    const randomChoice = choices[Math.floor(Math.random() * choices.length)]
+    let resultGame;
+    if (userChoice === randomChoice) {
+        alert(`Ваш выбор:${userChoice}, Выбор ИИ:${randomChoice} - получилась ничья`)
+    }
+    else if (userChoice === `камень` && randomChoice === `ножницы` || userChoice === `ножницы` && randomChoice === `бумага` || userChoice === `бумага` && randomChoice === `камень`) {
+        alert(`Вы победили, возбмите с полки пирожок выбор компьютера был ${randomChoice}`)
+    }
+    else {
+        alert(`Вы проиграли, печалька, выбор компьютера был ${randomChoice}`)
+    }
 }
-const randomChoice = choices[Math.floor(Math.random()*choices.length)]
-let resultGame;
-if (userChoice===randomChoice) {
-    alert(`Ваш выбор:${userChoice}, Выбор ИИ:${randomChoice} - получилась ничья` )
-}
-else if(userChoice === `камень` && randomChoice ===`ножницы` || userChoice === `ножницы` && randomChoice === `бумага` || userChoice === `бумага` && randomChoice ===`камень`){
-alert(`Вы победили, возбмите с полки пирожок`)
-}
-else{
-    alert(`Вы проиграли, печалька`)
-}}

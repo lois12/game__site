@@ -1,40 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/testscript.css">
     <title>Test Script</title>
 </head>
+
 <body>
     <header class="header center">
         <h3 class="header__title"> Тут я тестирую всякие штуки!</h3>
         <div class="header__content"></div>
         <ul class="header__menu">
-            <li class="header__menu-style"><a class="header__menu-link"href="#">Контакты</a></li>
-            <li class="header__menu-style"><a class="header__menu-link"href="#">Регистрация</a></li>
-            <li class="header__menu-style"><a class="header__menu-link" href="https://nikulya.ru/ya/projil/milliardiy/let/na/etoy/zemle/">Зачем я существую</a></li>
-            <li class="header__menu-style"><a class="header__menu-link" href="https://rutube.ru/video/afb5fb1337f25d4f75945d150a460203/?&utm_source=embed&utm_medium=referral&utm_campaign=logo&utm_content=afb5fb1337f25d4f75945d150a460203&utm_term=yastatic.net%2F&referrer=appmetrica_tracking_id%3D1037600761300671389%26ym_tracking_id%3D9553202593897625399">Посмотреть упоротый мультик</a></li>
+            <li class="header__menu-style"><a class="header__menu-link" href="#">Контакты</a></li>
+            <li class="header__menu-style"><a class="header__menu-link" href="#">Регистрация</a></li>
+            <li class="header__menu-style"><a class="header__menu-link"
+                    href="https://nikulya.ru/ya/projil/milliardiy/let/na/etoy/zemle/">Зачем я существую</a></li>
+            <li class="header__menu-style"><a class="header__menu-link"
+                    href="https://rutube.ru/video/afb5fb1337f25d4f75945d150a460203/?&utm_source=embed&utm_medium=referral&utm_campaign=logo&utm_content=afb5fb1337f25d4f75945d150a460203&utm_term=yastatic.net%2F&referrer=appmetrica_tracking_id%3D1037600761300671389%26ym_tracking_id%3D9553202593897625399">Посмотреть
+                    упоротый мультик</a></li>
         </ul>
-        
+
     </header>
     <form class="container__form" action="">
-        <input class="container__reg-form"  type="email" placeholder="Введите ваш email">
+        <input class="container__reg-form" type="email" placeholder="Введите ваш email">
         <input class="container__reg-form" type="text" placeholder="Введите ваше имя">
         <input class="container__reg-form" type="password" placeholder="Придумайте пароль">
         <button class="container__reg-btn"> Подтвердить данные</button>
     </form>
     <div class="container ">
         <div class="contaner__content">
-        <h1 class="container__title"> Тут будут задания по JS</h1>
-        <button class="container__btn"> Нажми тут что бы запустить тестовый script</button>
+            <h1 class="container__title"> Тут будут задания по JS</h1>
+            <button id="btnHide" class="container__btn"> Скрыть заголовок</button>
+            <p class="change__color-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dolore, incidunt distinctio ullam beatae quae sunt et possimus culpa voluptates, ipsum reprehenderit doloribus aliquid maiores numquam porro vitae id ad?</p>
+            <button id="change__p-color" class="container__btn"> Изменить цвет параграфа</button>
+        </div>
     </div>
+    <section class="change__text">
+        <h2 class="change__text-title">Тут текст который  будет меняться</h2>
+        <button class="change__text-btn">Кнопка которая меняет текст</button>
+
+    </section>
+    <div class="description__box">
+        <div class="description__box-content"> Я хочу что бы ты изменял меня</div>
+        <div class="description__box-content"> Я хочу что бы ты изменял меня</div>
+        <div class="description__box-content"> Я хочу что бы ты изменял меня</div>
+        <div class="description__box-content"> Я хочу что бы ты изменял меня</div>
+        <div class="description__box-content"> Я хочу что бы ты изменял меня</div>
+        <div class="description__box-content" id="padding"> Я хочу что бы ты изменял меня</div>
+        <button class="descriprion__box-btn"> Изменить текст выше</button>
     </div>
-    
-    <script defer src="JS/hw6.js"></script>
-  <!--   <script defer src="JS/more__practik.js"></script> -->
-    
-    
-   
+    <div class="p__box">
+        <p class="p__box-p1">Привет,я текст из параграфа</p>
+        <p class="p__box-p2">Привет,я текст из параграфа</p>
+        <p class="p__box-p3">Привет,я текст из параграфа</p>
+        <p class="p__box-description">Привет,я текст из параграфа</p>
+        <p class="p__box-description">Привет,я текст из параграфа</p>
+    </div>
+    <button class="createEl-btn">  Создам текст за пару баксов</button>
+<div class="remove__box">
+    <p class="remove__box-p remove__box-p-true">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="remove__box-p">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="remove__box-p">Lorem ipsum dolor sit amet consectetur.</p>
+    <p class="remove__box-p remove__box-p-true">Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+<div class=" remove__box-click">
+    <button class="remove__box-btn">Удалить элемент</button>
+</div>
+    <script defer src="JS/hw-7.js"></script>
+    <!--   <script defer src="JS/more__practik.js"></script> -->
+
+
+
 </body>
+
 </html>

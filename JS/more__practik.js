@@ -39,7 +39,7 @@ function isEven(num) {
     
 const fruts =[
     {name: "Lemon ",price:50},
-    {name:"Orange", price:100}
+    {name:"Orange", price:100},
     { name:"WaterLemon", price:200}
 ]
 
