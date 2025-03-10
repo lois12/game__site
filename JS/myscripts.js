@@ -146,3 +146,14 @@ function gameStonePapperCut() {
         alert(`Вы проиграли, печалька, выбор компьютера был ${randomChoice}`)
     }
 }
+
+/* Игра Угадай цвет */
+const colorChangeBtn = document.getElementById("color-change__btn");
+const colorChangeElem = document.querySelector(`.mini-games-box`);
+colorChangeBtn.addEventListener('click', function () {
+    const randomColor = `#` + Math.floor(Math.random() * 16777215).toString(16)
+    colorChangeElem.style.backgroundColor = randomColor;
+    colorChangeBtn.style.backgroundColor = randomColor;
+})
+
+alert("Здрасте - сделал изменение цвета в том числе и для кнопки в заданной игре")

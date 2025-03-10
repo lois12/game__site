@@ -85,18 +85,27 @@ a {
 
 .top__line {
     background-color: rgb(188, 236, 48);
-    width: 100%;
+    width: 200%;
     height: 90px;
+    overflow: hidden;
+    position: relative;
 
     &-content {
+        width: fit-content;
         display: flex;
+        animation: move 10s linear infinite;
         align-items: center;
         gap: 51px;
         overflow:hidden;
         padding-top: 30px;
         padding-left: 19px;
+        &:hover.top__content__link{
+            opacity: 0.7;
+        }
+      
     }
     &-link{
+        box-sizing: border-box;
         color: rgb(32, 32, 39);
         font-size: 30px;
         font-weight: 700;
@@ -105,7 +114,29 @@ a {
         text-align: left;
         text-transform: uppercase;
         white-space: nowrap;
+        opacity: 1;
+        transition: 0.5s;
+        padding: 0 20px;
+        flex-wrap: wrap;
+        
     }
+    .top__line-content::after{
+        content: "";
+        display: block;
+        width: 100%;
+        flex-shrink: 0;
+    }
+}
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    80% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+   }
+@keyframes move{
+    from{transform:translateX(0);}
+    to {transform: translateX(-100%);}
 }
 
 
