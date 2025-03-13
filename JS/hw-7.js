@@ -122,6 +122,6 @@ removeBtn.addEventListener('click', function () {
 
     }
 })
- 
+
 const comment = '  Где то названия классов будут отличатся  - слишком много description для одной страницы =)))'
 alert(comment);
