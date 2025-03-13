@@ -3,14 +3,20 @@
 
 function game1() {
     let userName = prompt(`Введите своё имя`);
+    if (!userName) {
+        alert("Игра отменена");
+        return;
+    }
     let randomNumber = Math.floor(Math.random() * 100) + 1;
-
     console.log(randomNumber);
     let guessed = false;
-
-
     while (!guessed) {
         let userNumber = prompt(`Введите  число от 1 до 100`);
+        if (userNumber === null) {
+            alert("Игра отменена!Хотите начать заново?");
+            game1()
+            return;
+        }
 
         if (userNumber > randomNumber) {
             alert(`Ваше число больше, попробуйте ещё раз`);
@@ -24,7 +30,6 @@ function game1() {
         }
     }
 }
-
 // Игра простая арифметика
 
 function gameArifmetix() {
@@ -57,20 +62,33 @@ function gameArifmetix() {
 
     function checkUserAnswer() {
         const { task, userCorrectAnswer } = generateTask();
-        const userAnswer = parseFloat(prompt(`Решите задачу: ${task}`));
+        const userAnswer = prompt(`Решите задачу: ${task}`);
+        if (userAnswer === null) {
+            alert("Игра отменена!");
+            return;
+        }
+        const parsedUserAnswer = parseFloat(userAnswer);
 
-        if (userAnswer === userCorrectAnswer) {
-            alert(`Правильный ответ!`);
+        if (isNaN(parsedUserAnswer)) {
+            alert("Пожалуйста, введите число!");
+            checkUserAnswer();
+        } else if (parsedUserAnswer === userCorrectAnswer) {
+            alert("Правильный ответ!");
         } else {
             alert(`Неправильный ответ! Правильный ответ: ${userCorrectAnswer}`);
         }
     }
+
 
     checkUserAnswer();
 }
 /* Игра  "переверни слово" */
 function wordReverse() {
     const userWord = prompt(`Введите слово что бы его перевернуть`)
+    if (userWord === null) {
+        alert("Игра отменена!");
+        return;
+    }
     if (userWord) {
         const reverseWord = userWord.split(``).reverse().join(``);
         alert(`Перевернутое слово ${reverseWord}`)
@@ -111,6 +129,10 @@ function gameQuiz() {
         }
 
         const userAnswer = prompt(questionText + "Введите свой ответ: ");
+        if (userAnswer === null) {
+            alert("Игра отменена!");
+            return;
+        }
 
         if (parseInt(userAnswer) === q.correctAnswer) {
             point++;
@@ -122,31 +144,35 @@ function gameQuiz() {
 
     alert(`Вы набрали ${point} очков из возможных ${quiz.length}`);
 }
-
-
-
-/* Игра Камень\Ножницы\Бумага */
+// Камень/Ножницы/Бумага
 function gameStonePapperCut() {
-    const choices = [`камень`, `ножницы`, `бумага`]
-    const userChoice = prompt(`Выберете  один из вариантов Камень,Ножницы или Бумага`).toLocaleLowerCase();
-    if (!choices.includes(userChoice)) {
-        alert(`Вы ввели недопуcтимое значение`)
+    const choices = ['камень', 'ножницы', 'бумага'];
+    const userChoice = prompt('Выберите один из вариантов: Камень, Ножницы или Бумага');
+    if (userChoice === null) {
+        alert('Игра отменена!');
         return;
-
     }
-    const randomChoice = choices[Math.floor(Math.random() * choices.length)]
+    const lowerCaseChoice = userChoice.toLowerCase();
+    if (!choices.includes(lowerCaseChoice)) {
+        alert('Вы ввели недопустимое значение');
+        return;
+    }
+    const randomChoice = choices[Math.floor(Math.random() * choices.length)];
     let resultGame;
-    if (userChoice === randomChoice) {
-        alert(`Ваш выбор:${userChoice}, Выбор ИИ:${randomChoice} - получилась ничья`)
+    if (lowerCaseChoice === randomChoice) {
+        resultGame = `Ваш выбор: ${lowerCaseChoice}, Выбор ИИ: ${randomChoice} - получилась ничья`;
+    } else if (
+        (lowerCaseChoice === 'камень' && randomChoice === 'ножницы') ||
+        (lowerCaseChoice === 'ножницы' && randomChoice === 'бумага') ||
+        (lowerCaseChoice === 'бумага' && randomChoice === 'камень')
+    ) {
+        resultGame = `Вы победили, возьмите с полки пирожок! Выбор компьютера был ${randomChoice}`;
+    } else {
+        resultGame = `Вы проиграли, печалька. Выбор компьютера был ${randomChoice}`;
     }
-    else if (userChoice === `камень` && randomChoice === `ножницы` || userChoice === `ножницы` && randomChoice === `бумага` || userChoice === `бумага` && randomChoice === `камень`) {
-        alert(`Вы победили, возбмите с полки пирожок выбор компьютера был ${randomChoice}`)
-    }
-    else {
-        alert(`Вы проиграли, печалька, выбор компьютера был ${randomChoice}`)
-    }
+    
+    alert(resultGame);
 }
-
 /* Игра Угадай цвет */
 const colorChangeBtn = document.getElementById("color-change__btn");
 const colorChangeElem = document.querySelector(`.mini-games-box`);
@@ -156,4 +182,3 @@ colorChangeBtn.addEventListener('click', function () {
     colorChangeBtn.style.backgroundColor = randomColor;
 })
 
-alert("Здрасте - сделал изменение цвета в том числе и для кнопки в заданной игре")
