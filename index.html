@@ -15,15 +15,15 @@
     <div class="top center">
         <div class="top__content">
             <h1 class="top__title">Добро пожаловать на мой сайт мини-игр</h1>
-            <p class="top__subtitle">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай «Поехали!» и
-                приступай.</p>
-
-
+            <p class="top__subtitle">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <strong>
+                    «Поехали!»</strong>и
+                <strong>приступай</strong>
+            </p>
         </div>
-        <form action="#for__games-section">
-            <button class="top__btn">Поехали!</button>
-        </form>
+        <div class="top__btn-mobile top__btn-table ">
 
+            <button onclick="location.href='#for__games-section'" class="top__btn">Поехали!</button>
+        </div>
     </div>
     <div class="top__line">
         <div class="top__line-content">
@@ -48,12 +48,8 @@
                 может поиграть каждый.
                 <br>Все игры доступны для пользования.
             </p>
-
             <div class="for-games__wrapper">
-
-
                 <div class="for-games__box">
-
                     <article class="for-games__card">
                         <a href="#game-1">
                             <img class="for-games__card-img" src="IMG/for__games/card__1.jpeg" alt="game__1">
@@ -63,9 +59,6 @@
                             </div>
                         </a>
                     </article>
-
-
-
                     <article class="for-games__card">
                         <a href="#game-4">
                             <img class="for-games__card-img" src="IMG/for__games/card__4.png" alt="game__4">
@@ -76,8 +69,6 @@
                         </a>
                     </article>
                 </div>
-
-
                 <div class="for-games__box">
                     <article class="for-games__card">
                         <a href="#game-2">
@@ -88,9 +79,6 @@
                             </div>
                         </a>
                     </article>
-
-
-
                     <article class="for-games__card ">
                         <a href="#game-5">
                             <img class="for-games__card-img" src="IMG/for__games/card__5.png" alt="game__5">
@@ -100,8 +88,6 @@
                             </div>
                         </a>
                     </article>
-
-
                 </div>
                 <div class="for-games__box">
                     <article class="for-games__card">
@@ -113,10 +99,6 @@
                             </div>
                         </a>
                     </article>
-
-
-
-
                     <article class="for-games__card">
                         <a href="#game-6">
                             <img class="for-games__card-img" src="IMG/for__games/card__6.png" alt="game__6">
@@ -126,17 +108,13 @@
                             </div>
                         </a>
                     </article>
-
-
                 </div>
+            </div>
         </section>
-
-
-
 
         <section class="mini-games center">
             <hr class="separator center">
-            </hr>
+            
             <h2 class="mini-games-title">Мини-игры</h2>
             <div class="mini-games-box">
                 <article class="mini-games__card" id="game-1">
@@ -184,18 +162,16 @@
                 </article>
                 <article class="mini-games__card mini-games__card_reverse" id="game-6">
                     <div class="mini-games__card-content">
-                        <h3 class="mini-games__card-title mini-games__card-title_small">Генератор случайных цветов</h3>
+                        <h3 class="mini-games__card-title mini-games__card-title_small-color-game">Генератор случайных
+                            цветов</h3>
                         <p class="mini-games__card-info mini-games__card-info_mod496px">Игра, в которой при клике на
                             кнопку фон страницы меняется на
                             случайный.</p>
-                        <button class="mini-games__card-form-btn">Играть</button>
+                        <button id="color-change__btn" class="mini-games__card-form-btn">Играть</button>
                     </div>
                     <img class="mini-games__card-img" src="IMG/mini-game/Card6.png" alt="#">
                 </article>
-
-
             </div>
-
         </section>
     </main>
     <footer class="footer center">
