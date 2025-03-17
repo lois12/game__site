@@ -570,45 +570,14 @@ a {
     justify-content: center;
   }
 }
-/* @media (min-width:769px) and (max-width:1200px){
-    .center {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-.top__content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.top__btn-table{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-.top__title{
-    text-align: center;
-}
-.top__subtitle{
-    text-align: center;
-}
-
-.for-games__box {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    gap: 22px;
-  }
-} */
-@media (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .center {
     padding-left: 32px;
     padding-right: 32px;
   }
   .top {
     background: url(../IMG/mobile/Star\ 4.svg) top 650px left 400px/45px 48px no-repeat, url(../IMG/mobile/Star\ 5.svg) top 600px left 350px/22px no-repeat, url(../IMG/mobile/Star\ 2.svg) top 120px left 80px/45px no-repeat, url(../IMG/mobile/Star\ 3.svg) top 85px left 130px/25px no-repeat, url(../IMG/mobile/big\ star.svg) top -150px right -150px/275px 290px no-repeat, url(../IMG/mobile/mob__test.png) right/100% no-repeat;
-    height: 800px;
+    height: 700px;
   }
   .top__content {
     text-align: center;
@@ -696,10 +665,5 @@ a {
   }
   .top__btn-table {
     text-align: center;
-  }
-  .mini-games__card-title_small {
-    word-wrap: break-word;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
   }
 }/*# sourceMappingURL=style.css.map */
