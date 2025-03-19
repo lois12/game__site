@@ -124,7 +124,6 @@ a {
 
     }
 
-
 @keyframes move {
     0% { transform: translateX(0); }
     20% { transform: translateX(-100%); }
@@ -136,15 +135,12 @@ a {
     to {transform: translateX(-100%);}
 }
 
-
-
 .separator {
     background: rgb(32, 32, 39);
 
 
 
 }
-
 .footer {
     background: rgb(189, 237, 53);
     background-size: contain;
